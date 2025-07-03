@@ -1,5 +1,5 @@
 import {Sidebar} from "../components/Sidebar";
-// import {Hero} from "../components/Hero";
+import {Hero} from "../components/Hero";
 // import {About} from "../components/About";
 // import {Skills} from "../components/Skills";
 // import {Projects} from "../components/Projects";
@@ -12,14 +12,15 @@ function Index (){
             <Sidebar />
             
             {/* Main Content */}
-            {/* <main className="ml-16 transition-all duration-300">
+            <main className="ml-16 transition-all duration-300">
                 <Hero />
+{/*                 
                 <About />
                 <Skills />
                 <Projects />
                 <Contact />
-                <Footer />
-            </main> */}
+                <Footer /> */}
+            </main>
         </div>
     )
 }
