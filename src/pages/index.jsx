@@ -3,8 +3,8 @@ import {Hero} from "../components/Hero";
 import {About} from "../components/About";
 import {Skills} from "../components/Skills";
 import MobileMenu from "../components/MobileMenu"
-// import {Projects} from "../components/Projects";
-// import {Contact} from "../components/Contact";
+import {Projects} from "../components/Projects";
+import {Contact} from "../components/Contact";
 // import {Footer} from "../components/Footer";
 function Index (){
     return (
@@ -22,9 +22,9 @@ function Index (){
                 <Hero />
                 <About />
                 <Skills />
-{/*                 
                 <Projects />
                 <Contact />
+{/*                 
                 <Footer /> */}
             </main>
         </div>
