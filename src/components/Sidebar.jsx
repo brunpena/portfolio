@@ -40,7 +40,7 @@ export function Sidebar({ className }) {
     return (
     <div
         className={`fixed left-0 top-0 h-full bg-card/95 backdrop-blur-md border-r border-border z-40 transition-all duration-300 ease-in-out ${
-        isExpanded ? 'w-56 lg:w-64' : 'w-14 lg:w-16'
+        isExpanded ? 'w-64' : 'w-16'
         } ${className || ''}`}
         onMouseEnter={() => setIsExpanded(true)}
         onMouseLeave={() => setIsExpanded(false)}
