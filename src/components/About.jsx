@@ -1,5 +1,5 @@
 
-import { Card, CardContent } from './ui/card.jsx';
+// import { Card, CardContent } from './ui/card.jsx';
 import { Badge } from "./ui/Badge";
 import { GraduationCap, MapPin, Calendar } from 'lucide-react';
 
