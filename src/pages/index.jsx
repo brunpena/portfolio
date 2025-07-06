@@ -17,7 +17,8 @@ function Index (){
             <MobileMenu />
             
             {/* Main Content */}
-            <main class="md:ml-16 transition-all duration-300">
+            <main class="md:ml-16 transition-all duration-300 w-full max-w-full overflow-x-hidden">
+
 
                 <Hero />
                 <About />
