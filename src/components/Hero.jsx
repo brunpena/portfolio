@@ -30,7 +30,7 @@ export function Hero() {
       <div className="container mx-auto text-center relative z-10 max-w-4xl">
         {/* Profile Image */}
         <div className="mb-4 sm:mb-6 lg:mb-8 relative">
-          <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 mx-auto rounded-full overflow-hidden border-2 sm:border-4 border-primary/30 pulse-glow">
+          <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-36 lg:h-36 mx-auto rounded-full overflow-hidden border-2 sm:border-4 border-primary/30 pulse-glow">
             <img
               src="https://avatars.githubusercontent.com/u/130068559?v=4"
               alt="Bruno Eduardo Pena"
@@ -40,7 +40,6 @@ export function Hero() {
           
         </div>
 
-        {/* Text Content */}
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-bold mb-3 sm:mb-4 lg:mb-6 leading-tight">
           <span className="block text-foreground">Bruno Eduardo</span>
           <span className="block gradient-text">Pena</span>
@@ -68,14 +67,21 @@ export function Hero() {
           ))}
         </div>
 
-        {/* Action Buttons - INTEGRADOS sem <Button> */}
         <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 lg:gap-4 justify-center items-center px-4 sm:px-0">
-          <button
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm sm:text-base font-medium px-8 py-3 bg-gradient-primary hover:opacity-90 transition-all duration-300 shadow-glow"
-          >
-            <Download className="h-4 w-4" />
-            Download CV
-          </button>
+          {/* Botão + Seta juntos */}
+          <div className="relative p-3">
+            <button
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm sm:text-base font-medium px-8 py-3 bg-gradient-primary hover:opacity-90 transition-all duration-300 shadow-glow"
+            >
+              <Download className="h-4 w-4" />
+              Download Currículo
+            </button>
+
+            {/* Seta presa ao botão */}
+            <div className="absolute top-0 right-0 -translate-y-full translate-x-full animate-bounce">
+              <ArrowDown className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 text-muted-foreground" />
+            </div>
+          </div>
 
           <button
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm sm:text-base font-medium px-8 py-3 border border-primary/30 hover:bg-primary/10 transition-all duration-300"
@@ -83,12 +89,8 @@ export function Hero() {
             Ver Projetos
           </button>
         </div>
-
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-4 sm:bottom-6 lg:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <ArrowDown className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 text-muted-foreground" />
-        </div>
       </div>
+
     </section>
   );
 }

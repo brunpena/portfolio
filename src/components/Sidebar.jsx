@@ -28,7 +28,7 @@ external: true
 },
 {
 icon: Download,
-label: 'Download CV',
+label: 'Download Pdf',
 href: '#',
 external: false
 }
