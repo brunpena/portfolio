@@ -5,14 +5,14 @@ import { Badge } from './ui/Badge';
 export function Skills() {
     const skillCategories = [
     {
-    title: 'Linguagens de Programação',
+    title: 'Conhecimento em Linguagens',
     icon: '💻',
     skills: [
-        { name: 'C', level: 85, color: 'bg-blue-500' },
-        { name: 'C++', level: 80, color: 'bg-blue-600' },
+        { name: 'C', level: 20, color: 'bg-blue-500' },
+        { name: 'C++', level: 20, color: 'bg-blue-600' },
         { name: 'Python', level: 90, color: 'bg-yellow-500' },
-        { name: 'TypeScript', level: 88, color: 'bg-blue-400' },
-        { name: 'JavaScript', level: 92, color: 'bg-yellow-400' }
+        { name: 'TypeScript', level: 80, color: 'bg-blue-400' },
+        { name: 'JavaScript', level: 90, color: 'bg-yellow-400' }
         ]
     },
     {
@@ -30,16 +30,16 @@ export function Skills() {
     icon: '🗄️',
     skills: [
         { name: 'SQL Server', level: 85, color: 'bg-red-600' },
-        { name: 'MySQL', level: 90, color: 'bg-orange-600' },
-        { name: 'Supabase', level: 80, color: 'bg-green-500' },
-        { name: 'MachBase Neo', level: 75, color: 'bg-purple-500' }
+        { name: 'Estrutura de Dados', level: 90, color: 'bg-orange-600' },
+        { name: 'Supabase', level: 95, color: 'bg-green-500' },
+        { name: 'MachBase Neo', level: 95, color: 'bg-purple-500' }
         ]
     },
     {
     title: 'Ferramentas & Tecnologias',
     icon: '🛠️',
     skills: [
-        { name: 'Git', level: 88, color: 'bg-orange-500' },
+        { name: 'Node.js', level: 70, color: 'bg-orange-500' },
         { name: 'GitHub', level: 90, color: 'bg-gray-600' },
         { name: 'VS Code', level: 92, color: 'bg-blue-500' },
         { name: 'APIs REST', level: 85, color: 'bg-green-500' }
@@ -102,8 +102,6 @@ export function Skills() {
                     {[
                         'Integração de Sistemas',
                         'Automação',
-                        'Performance Optimization', 
-                        'RESTful APIs',
                         'Responsive Design',
                         'Problem Solving',
                         'Team Collaboration',
